@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job instance="Kozar\Basic\Cron\ShowDiscount" method="showBlock" name="cron_show_block">
-            <schedule>* * * * *</schedule>
+            <schedule>* 8,10 * * *</schedule>
         </job>
     </group>
 </config>
