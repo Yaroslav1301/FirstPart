@@ -21,7 +21,7 @@ class ShowDiscount
     {
         $isTrue = date_default_timezone_set("Europe/Kiev");
         $hour_now = (int)date("H", time());
-        if ($hour_now >= 8 && $hour_now < 16) {
+        if ($hour_now >= 8 && $hour_now < 10) {
             $this->configWriter->save(self::PATH, 1, ScopeConfigInterface::SCOPE_TYPE_DEFAULT);
         }else {
             $this->configWriter->save(self::PATH, 0, ScopeConfigInterface::SCOPE_TYPE_DEFAULT);
